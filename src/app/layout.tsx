@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar/Navbar';
 import { ReactNode } from 'react';
 
 export const metadata = {
-  title: 'SeuNome | Front-end Developer',
+  title: 'Guilherme | Front-end Developer',
   description: 'Portfólio pessoal de desenvolvedor front-end',
 };
 
