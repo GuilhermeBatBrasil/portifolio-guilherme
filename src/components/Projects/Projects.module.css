@@ -1,135 +1,91 @@
 .projects {
-  background: linear-gradient(135deg, #232526 0%, #414345 100%);
-  color: #fff;
-  padding: 5rem 2rem 4rem 2rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.projects::before {
-  content: '';
-  position: absolute;
-  top: -80px;
-  left: -80px;
-  width: 220px;
-  height: 220px;
-  background: radial-gradient(circle, #00dfd8 0%, transparent 70%);
-  opacity: 0.18;
-  z-index: 0;
-}
-
-.projects::after {
-  content: '';
-  position: absolute;
-  bottom: -100px;
-  right: -100px;
-  width: 260px;
-  height: 260px;
-  background: radial-gradient(circle, #7f5af0 0%, transparent 70%);
-  opacity: 0.13;
-  z-index: 0;
+  padding: 80px 20px;
+  background-color: #fff;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
-  position: relative;
-  z-index: 1;
+  text-align: center;
 }
 
-.container h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  font-weight: bold;
-  background: linear-gradient(90deg, #00dfd8, #7f5af0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  letter-spacing: 1px;
-  text-shadow: 0 2px 16px rgba(0,223,216,0.10);
+.title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.dot {
+  color: #000;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
 }
 
 .card {
-  background: linear-gradient(120deg, #232526 80%, #2c5364 100%);
-  padding: 2.2rem 1.5rem 1.5rem 1.5rem;
-  border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(0,223,216,0.08);
-  transition: transform 0.3s, box-shadow 0.3s;
-  position: relative;
-  z-index: 1;
-  border: 1.5px solid rgba(127,90,240,0.10);
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: left;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .card:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 8px 32px rgba(127,90,240,0.18);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-.card h3 {
-  margin-bottom: 0.7rem;
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #00dfd8;
+.projectTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 12px;
 }
 
-.card p {
-  font-size: 1.05rem;
-  margin-bottom: 1.1rem;
-  color: #e0e0e0;
+.description {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 16px;
 }
 
 .techs {
-  list-style: none;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1.2rem;
+  gap: 10px;
+  margin-bottom: 16px;
+  list-style: none;
+  padding: 0;
 }
 
 .techs li {
-  background: linear-gradient(90deg, #00dfd8, #7f5af0);
-  color: #181818;
-  padding: 0.28rem 0.85rem;
-  border-radius: 6px;
-  font-size: 0.92rem;
-  font-weight: 600;
-  box-shadow: 0 2px 8px rgba(0,223,216,0.10);
-  letter-spacing: 0.5px;
+  background-color: #e0f0ff;
+  color: #0077b5;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 500;
 }
 
-.links {
-  margin-top: 0.5rem;
-}
-
-.links a {
-  margin-right: 1rem;
+.githubLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: #333;
   text-decoration: none;
-  color: #00dfd8;
-  font-weight: bold;
-  transition: color 0.2s;
+  transition: color 0.3s ease;
 }
 
-.links a:hover {
-  color: #7f5af0;
-  text-decoration: underline;
+.githubLink:hover {
+  color: #0077b5;
 }
 
-@media (max-width: 600px) {
-  .projects {
-    padding: 3rem 1rem 2rem 1rem;
-  }
-  .container h2 {
-    font-size: 2rem;
-  }
-  .grid {
-    grid-template-columns: 1fr;
-  }
+.icon {
+  width: 18px;
+  height: 18px;
 }

@@ -12,17 +12,19 @@ export default function SkillsSection() {
   return (
     <section className={styles.skills} id="skills">
       <div className={styles.container}>
-        <h2>Habilidades</h2>
-        {Object.entries(skills).map(([category, items]) => (
-          <div key={category} className={styles.block}>
-            <h3>{formatTitle(category)}</h3>
-            <ul className={styles.list}>
-              {items.map((skill, idx) => (
-                <li key={idx}>{skill}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+        <h2 className={styles.title}>skills<span className={styles.dot}>.</span></h2>
+        <div className={styles.grid}>
+          {Object.entries(skills).map(([category, items]) => (
+            <div key={category} className={styles.card}>
+              <h3 className={styles.category}>{formatTitle(category)}</h3>
+              <ul className={styles.list}>
+                {items.map((skill, idx) => (
+                  <li key={idx} className={styles.skill}>{skill}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
