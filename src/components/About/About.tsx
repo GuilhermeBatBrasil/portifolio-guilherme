@@ -4,7 +4,7 @@ export default function AboutSection() {
   return (
     <section className={styles.about} id="about">
       <div className={styles.container}>
-        <h2 className={styles.title}>sobre mim<span className={styles.dot}>.</span></h2>
+        <h2 className={styles.title}>Sobre mim<span className={styles.dot}>.</span></h2>
         <p className={styles.intro}>
           Meu nome é Guilherme e sou um desenvolvedor front-end com forte foco em qualidade,
           performance e experiência do usuário. Estou em constante evolução na área de tecnologia,

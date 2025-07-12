@@ -9,8 +9,8 @@ export default function ContactSection() {
   return (
     <section className={styles.contact} id="contact">
       <div className={styles.container}>
-        <h2 className={styles.title}>contact<span className={styles.dot}>.</span></h2>
-        <p className={styles.subtitle}>Get in touch with me via social media or send me an email.</p>
+        <h2 className={styles.title}>Contato<span className={styles.dot}>.</span></h2>
+        <p className={styles.subtitle}>Entre em contato comigo pelas redes sociais ou envie-me um e-mail.</p>
 
         <div className={styles.socials}>
           <a href="https://www.linkedin.com/in/guilherme-brasil-47791216b/" target="_blank" rel="noopener noreferrer" className={styles.social}>
