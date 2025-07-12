@@ -44,7 +44,7 @@ export default function ProjectsSection() {
 		<section className={styles.projects} id="projects">
 			<div className={styles.container}>
 				<h2 className={styles.title}>
-					projects<span className={styles.dot}>.</span>
+					Projetos<span className={styles.dot}>.</span>
 				</h2>
 				<a
 					href="https://github.com/GuilhermeBatBrasil"

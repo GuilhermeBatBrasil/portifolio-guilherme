@@ -29,7 +29,7 @@ const Navbar = () => {
       <div className={styles.container}>
         <div className={styles.logo}>GuilhermeBrasilDev</div>
         <nav ref={navRef} className={`${styles.nav} ${menuOpen ? styles.open : ''}`}>
-          <Link href="/" onClick={handleNavClick}>Home</Link>
+          {/* <Link href="/" onClick={handleNavClick}>Menu</Link> */}
           <Link href="/about" onClick={handleNavClick}>Sobre</Link>
           <Link href="/skills" onClick={handleNavClick}>Skills</Link>
           <Link href="/projects" onClick={handleNavClick}>Projetos</Link>

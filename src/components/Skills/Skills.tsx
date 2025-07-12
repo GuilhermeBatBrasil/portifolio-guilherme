@@ -12,7 +12,7 @@ export default function SkillsSection() {
   return (
     <section className={styles.skills} id="skills">
       <div className={styles.container}>
-        <h2 className={styles.title}>skills<span className={styles.dot}>.</span></h2>
+        <h2 className={styles.title}>Skills<span className={styles.dot}>.</span></h2>
         <div className={styles.grid}>
           {Object.entries(skills).map(([category, items]) => (
             <div key={category} className={styles.card}>
