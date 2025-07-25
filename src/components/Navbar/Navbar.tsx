@@ -48,7 +48,7 @@ const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <div className={styles.container}>
-        <div className={styles.logo}>GuilhermeBrasilDev</div>
+        <Link href="/" className={styles.logo}>GuilhermeBrasilDev</Link>
         <nav
           ref={navRef}
           className={`${styles.nav} ${menuOpen ? styles.open : ""}`}
