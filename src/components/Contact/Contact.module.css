@@ -70,3 +70,27 @@
   stroke: #1da1f2; /* Azul do Twitter como exemplo */
 }
 
+@media (max-width: 600px) {
+  .contact {
+    padding: 40px 8px;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0 8px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .subtitle {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  .socials {
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .social {
+    font-size: 16px;
+  }
+}
+
