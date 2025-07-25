@@ -1,5 +1,6 @@
 import '../../styles/globals.css';
 import Navbar from '@/components/Navbar/Navbar';
+import { LanguageProvider } from '@/context/LanguageContext';
 import { ReactNode } from 'react';
 
 export const metadata = {
@@ -11,8 +12,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-BR">
       <body>
-        <Navbar />
-        <main>{children}</main>
+        <LanguageProvider>
+          <Navbar />
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );
